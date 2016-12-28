@@ -20,50 +20,14 @@ Starting with the Angular 1.4 phone catalog example app 'angular-phonecat'.  It
 * provides helpful development scripts,
 * sets a reasonable file structure.
 
-What am I building here?
+## What am I building here?
 
-- - -
-## Objective: Implement a posting system (Comments / Issues / Tasks / etc.)
-Implement a simple issue posting system that supports inline HTML and Tags.
-* Display a list of eleents on the screen based on the following API definition:
-```
-{
-    id: "1",
-    title: "this is an item",
-    text: "This is a description of the item. it might describe a bug/task/comment, it can also display <a href=\"www.google.com\">Links</a>",
-    tags: ["bug", "issue", "etc"]
-}
-```
-* Each element on the screen should support the following features:
-    * An element should be read only by default (with no input elements)
-        * In read only mode, **internal element text should support HTML tags**
-    * Each comment element should have the following buttons:
-        * Edit - Clicking on an Edit button should transform the element into an editable widget that allows modified all the properties of the element.
-            1. When in edit mode, there should be a way to cancel the changes or save them.
-            1. Allow adding exsiting tags, based on tags in other elements or new ones if the user types a tag that doesn't exist.
-            1. Comment text should spport simple html tag.
-        * Delete - Delete a comment element
-* There should be a way to filter elements based on tags. The user should only be able to select tags that are available in any of the elements.
-* At the end of the comment list, there should always be an editable comment element for adding new comments.
+Read the requirements on [README.md](./README.md).
 
-General Guidelines
-1. Use AngularJS (v1.x)
-    1. Define at least one Controller, one Service and one Directive
-2. Use LESS/SASS (Bootstrap styling is fine, try to add some custom modifications)
-3. Since there's no API defined, use mock data in the form of a .json file, but utilize Angular Resource for that.
-    1. Only one place should know about the Mock usae. Ther rest of the code should work with it as if it's coming from an API.
-4. Commit the result to Github/BitBucket
-5. No need for RTF support, simple html tags are enough
-6. The screenshots I provided are just for general idea. There is no requirement to use that specific UI design.
-
-**I _don't_ want the full issue tracking system in Github**, I gave it as an example for the commenting part. The task is to display a list of entries based on the API and allow editing them.
-
-You can refer to Github Issues (commenting system) as a general example:
-...image...
-- - -
 
 ## Tasks
 
 * Create a local dev directory for commentim, with npm, git, angular 1.4, gulp.
-* Initiate a repo on github.
+* Initiate a repo on github. 
+* Update the README and package.json md with specifics for this project.
 * 
