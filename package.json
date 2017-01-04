@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "name": "angular-commentium",
   "description": "A comment list editor in AngularJS",
@@ -24,8 +24,10 @@
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000",
 
-    "update-app-version": "node -e \"var fs=require('fs'),packageJson=require('./package.json'),viewFile='app/index.html',destFile=viewFile,viewText=fs.readFileSync(viewFile,'utf-8');viewText=viewText.replace(/(<span app-version>)(.*?)(<\\/span>)/,'$1'+packageJson.version+'$3');fs.writeFileSync(destFile,viewText);\"",
-    "prebuild": "npm run update-app-version",
+    "display-env": "node -e \" console.log(process.env); \"",
+    "display-app-properties": "node -e \" var keys = ['version', 'name', 'description', 'license'], prefix = 'npm_package_'; console.log(keys.map(function(key){return (key+': '+process.env[prefix+key]);})); \"",
+    "update-app-tags": "node -e \"var fs=require('fs'),packageJson=require('./package.json'),viewFile='app/index.html',destFile=viewFile,viewText=fs.readFileSync(viewFile,'utf-8');viewText=viewText.replace(/(<span app-version>)(.*?)(<\\/span>)/,'$1'+process.env.npm_package_version+'$3').replace(/(<span app-name>)(.*?)(<\\/span>)/,'$1'+process.env.npm_package_name+'$3');fs.writeFileSync(destFile,viewText);\"",
+    "prebuild": "npm run update-app-tags",
     "build": "gulp build",
     "start-built-server": "http-server -a 0.0.0.0 -p 8001 -c-1 ./build/app",
 
