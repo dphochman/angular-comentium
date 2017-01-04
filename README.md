@@ -1,6 +1,6 @@
 # AngularJS Comment List
 
-Forked from [AngularJS Phone Catalog Tutorial Application, branch 1.4-snapshot](angular-phonecat-1.4).
+Forked from [AngularJS Phone Catalog Tutorial Application, branch 1.4-snapshot][angular-phonecat-1.4].
 
 This document contains additions to [angular-phonecat-1.4-readme]. 
 
@@ -22,8 +22,8 @@ Implement a simple issue posting system that supports inline HTML and Tags.
     * Each comment element should have the following buttons:
         * Edit - Clicking on an Edit button should transform the element into an editable widget that allows modified all the properties of the element.
             1. When in edit mode, there should be a way to cancel the changes or save them.
-            1. Allow adding exsiting tags, based on tags in other elements or new ones if the user types a tag that doesn't exist.
-            1. Comment text should spport simple html tag.
+            1. Allow adding existing tags, based on tags in other elements or new ones if the user types a tag that doesn't exist.
+            1. Comment text should support simple html tag.
         * Delete - Delete a comment element
 * There should be a way to filter elements based on tags. The user should only be able to select tags that are available in any of the elements.
 * At the end of the comment list, there should always be an editable comment element for adding new comments.
@@ -33,7 +33,7 @@ General Guidelines
     1. Define at least one Controller, one Service and one Directive
 2. Use LESS/SASS (Bootstrap styling is fine, try to add some custom modifications)
 3. Since there's no API defined, use mock data in the form of a .json file, but utilize Angular Resource for that.
-    1. Only one place should know about the Mock usae. Ther rest of the code should work with it as if it's coming from an API.
+    1. Only one place should know about the Mock usage. Ther rest of the code should work with it as if it's coming from an API.
 4. Commit the result to Github/BitBucket
 5. No need for RTF support, simple html tags are enough
 6. The screenshots I provided are just for general idea. There is no requirement to use that specific UI design.
@@ -120,6 +120,8 @@ To run the built version of the application on port 8001:
 For more information on AngularJS please check out http://angularjs.org/
 
 [7 Zip]: http://www.7-zip.org/
+[angular-phonecat-1.4]: https://github.com/angular/angular-phonecat/tree/1.4-snapshot
+[angular-phonecat-1.4-readme]: https://github.com/angular/angular-phonecat/blob/1.4-snapshot/README.md
 [angular-seed]: https://github.com/angular/angular-seed
 [DI]: http://docs.angularjs.org/guide/di
 [directive]: http://docs.angularjs.org/guide/directive
@@ -134,5 +136,3 @@ For more information on AngularJS please check out http://angularjs.org/
 [protractor]: https://github.com/angular/protractor
 [jasmine]: http://pivotal.github.com/jasmine/
 [karma]: http://karma-runner.github.io
-[angular-phonecat-1.4]: https://github.com/angular/angular-phonecat/tree/1.4-snapshot
-[angular-phonecat-1.4-readme]: https://github.com/angular/angular-phonecat/blob/1.4-snapshot/README.md
