@@ -1,0 +1,39 @@
+<div ng-controller="CommentEditCtrl">
+    <form novalidate class="comment-form comment-edit-form">
+        <div class="input-comment-title">
+            <label htmlFor="inputTitle" class="input-comment-title"> Title </label>
+            <input type="text" class="input-comment-title" name="inputTitle" ng-model="comment.working.title" required="required" />
+            <span ng-show="form.inputTitle.$error.required">(required)</span>
+        </div>
+
+        <div class="input-comment-text">
+            <label htmlFor="inputText" class="input-comment-text"> Description </label>
+            <textarea class="input-comment-text" name="inputText" ng-model="comment.working.text" placeholder="Describe the issue here"></textarea>
+        </div>
+
+        <div class="input-comment-tags">
+            <label class="input-comment-tags"> Tags </label>
+            <ul class="input-comment-tags">
+            <li class="input-comment-tag input-comment-tag-checked" ng-repeat="name in comment.working.tags">
+                <input type="checkbox" class="checkbox" ng-bind="name" checked="checked" />
+                <label> {{name}} </label>
+            </li>
+            <li class="input-comment-tag input-comment-tag-existing" ng-repeat="name in existingTags" ng-hide="comment.working.tags.indexOf(name) > -1">
+                <input type="checkbox" class="checkbox" ng-bind="name" />
+                <label> {{name}} </label>
+            </li>
+            <li class="input-comment-tag input-comment-tag-new">
+                <input type="checkbox" class="checkbox" disabled="disabled" />
+                <input type="text" class="input-comment-tag-new" ng-model="newTag" />
+                <input type="button" ng-click="addTagToComment(newTag)" value="Add New Tag" />
+            </li>
+            </ul>
+        </div>
+
+        <div class="input-controls">
+            <input type="submit" ng-click="saveComment(comment.working)" value="Save" title="Save the changes" />
+            <input type="button" ng-click="cancel(comment)" value="Cancel" title="Cancel the changes" />
+        </div>
+
+    </form>
+</div>

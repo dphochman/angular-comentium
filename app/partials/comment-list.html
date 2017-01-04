@@ -1,0 +1,13 @@
+<div>
+    <div commentium-cloud></div>
+    <ul class="comment-list">
+        <input type="hidden" ng-model="tagSearch" />
+        <li class="comment-item" ng-repeat="comment in commentList | hasTag : tagSearch">
+            <commentium-item></commentium-item>
+        </li>
+    </ul>
+
+    <h3> {{ commentList | hasTag : tagSearch | count}} of {{ commentList.length === 1 ? "1 Comment" : commentList.length + " Comments" }} </h3>
+
+    <!--<div commentium-edit></div>-->
+</div>

@@ -1,0 +1,7 @@
+<div>
+    <ul class="comment-tagcloud">
+        <li class="tag-item {{tag.classes}}" ng-repeat="tag in tags">
+            <a class="tag-item-name {{tag.classes}}" title="{{tag.name}} ({{tag.freq}})" ng-click="tagClick(tag)">{{tag.name}}</a>
+        </li>
+    </ul>
+</div>

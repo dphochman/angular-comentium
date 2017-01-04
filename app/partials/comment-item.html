@@ -1,0 +1,13 @@
+<span class="comment-item-title">{{comment.title}}</span>
+<div class="comment-item-text" ng-bind-html="comment.text"></div>
+<ul class="comment-item-tags">
+    <li class="comment-item-tag" ng-repeat="tag in comment.tags">
+        <label class="comment-item-tag-name" ng-bind="tag"></label>
+    </li>
+</ul>
+<div class="input-controls">
+    <input type="button" value="Edit" ng-click="editComment(comment)" ng-hide="comment.editing" />
+    <input type="button" value="Cancel" ng-click="cancel(comment)" ng-show="comment.editing" />
+    <input type="button" value="Delete" ng-click="deleteComment(comment)" />
+</div>
+<div commentium-edit ng-show="comment.editing"></div>

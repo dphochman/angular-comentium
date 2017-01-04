@@ -1,1 +1,184 @@
 /* app css stylesheet */
+
+/* Size and layout */
+body {
+  margin: 1em;
+}
+
+.header, HEADER,
+.footer, FOOTER {
+  margin-top: 0;
+}
+
+/* Comment List */
+.comment-list {
+    list-style-type: none;
+    padding: 0 0 0.5em 0;
+    margin: 0 0 1em 0;
+}
+.comment-list .comment-item {
+    padding: 0 0 0.5em 0;
+    margin: 0 0 1em 0;
+}
+
+/* Read-only tags */
+.comment-list .comment-item .comment-item-tags {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.comment-list .comment-item .comment-item-tags .comment-item-tag {
+    list-style-type: none;
+    display: inline-block;
+}
+.comment-list .comment-item .comment-item-tags .comment-item-tag-name {
+    margin-right: 0.5em;
+}
+
+/* Tag Cloud */
+.comment-tagcloud {
+  list-style-type: none;
+  padding: 0 0 0.5em 0;
+  margin: 0 0 1em 0;
+}
+.comment-tagcloud .tag-item {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.comment-tagcloud .tag-item .tag-item-name {
+  zzz-padding: 4px;
+}
+.comment-tagcloud .tag-item a.tag-item-name {
+  color: #fff;
+  background-color: #f0f;
+}
+.comment-tagcloud .tag-item a.tag-item-name:hover, 
+.comment-tagcloud .tag-item a.tag-item-name:focus {
+  color: #fff;
+  background-color: #f6f;
+}
+.comment-tagcloud .tier-5 {
+  font-size: xx-large;
+}
+.comment-tagcloud .tier-4 {
+  font-size: x-large;
+}
+.comment-tagcloud .tier-3 {
+  font-size: large;
+}
+.comment-tagcloud .tier-2 {
+  font-size: medium;
+}
+.comment-tagcloud .tier-1 {
+  font-size: small;
+}
+.comment-tagcloud .tier-0 {
+  font-size: x-small;
+}
+
+TEXTAREA {
+  display: block;
+  width: 40em;
+  max-width: 100%;
+  height: 5em;
+  overflow-y: scroll;
+}
+
+
+h1 {font-size: 2em;}
+@media (min-width: 100px) {
+  h1 {font-size: 1em;}
+}
+@media (min-width: 360px) {
+  h1 {font-size: 1.25em;}
+}
+@media (min-width: 600px) {
+  h1 {font-size: 1.5em;}
+}
+@media (min-width: 900px) {
+  h1 {font-size: 2em;}
+}
+
+/* looks */
+body {
+  font-family: Georgia, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, sans-serif;
+}
+
+.comment-item-title {
+  font-weight: bold;
+}
+
+.text {
+  zzz-font-weight: normal;
+  font-style: normal;
+}
+.comment-item-text {
+  color: gray;
+}
+.text-output em {
+  color: #f0f;
+  font-weight: bold;
+  font-style: normal;
+}
+.comment-item-tag-name {
+  font-size: x-small;
+}
+.comment-item-tag-name, .tag-item-name {
+  font-family: "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
+  font-weight: 100;
+  color: white;
+  background-color: #f0f;
+  padding: 0.25em 1em;
+  margin: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-spacing: 2px;
+  border-color: #f3f;
+  border-radius: 8px;
+}
+
+
+/* Form-related styles go here */
+.comment-edit-form {
+  margin-left: 4em;
+}
+FORM, BUTTON, INPUT[type="button"], INPUT[type="submit"], FIELDSET, INPUT, TEXTAREA {
+  font-family: Verdana, sans-serif;
+}
+
+FIELDSET {
+  border-radius: 1em;
+}
+
+FORM INPUT, FORM LABEL INPUT, FORM TEXTAREA * {
+  font-weight: bold;
+  zzz-text-align: left;
+}
+FORM INPUT[type="text"], FORM TEXTAREA {
+  zzz-width: 15em;
+}
+FORM INPUT[type="checkbox"] {
+  display: inline-block;
+  width: 1em;
+}
+FORM INPUT[type="checkbox"][disabled="disabled"] {
+  visibility: hidden;
+}
+
+.inupt-comment-title {
+  width: 40em;
+}
+.input-comment-title LABEL.input-comment-title,
+.input-comment-text LABEL.input-comment-text,
+.input-comment-tags LABEL.input-comment-tags {
+  display: none;
+}
+.input-comment-tags, .input-comment-tags LI.input-comment-tag {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
