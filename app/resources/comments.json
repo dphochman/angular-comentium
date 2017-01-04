@@ -1,0 +1,92 @@
+[
+{
+  "id": "1",
+  "title": "This is an item",
+  "text": "This is a description of the item, it might describe a bug/task/comment, it can also display <a href=\"www.google.com\">Links</a>",
+  "tags": ["bug", "issue", "etc"]
+},
+{
+  "id": "2",
+  "title": "Bootstrap app in Angular 1.4",
+  "text": "Setup a development environment with Angular 1.4, including controller, service, and directive.",
+  "tags": ["task"]
+},
+{
+  "id": "3",
+  "title": "Create local test data",
+  "text": "Create test data to initialize the app without an independent data service.",
+  "tags": ["task"]
+},
+{
+  "id": "4",
+  "title": "Properly load router",
+  "text": "Don't load or depend on ngRoute from plunker, because it doesn't apply to Angular 1.4. It's causing all kinds of problems at runtime. Instead, use the appropriate linke to angular-route.js to match this version of Angular 1.4",
+  "tags": ["bug", "issue"]
+},
+{
+  "id": "5",
+  "title": "Five",
+  "text": "",
+  "tags": ["bug"]
+},
+{
+  "id": "6",
+  "title": "Six",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "7",
+  "title": "fsevents does not load",
+  "text": "npm install files a warning for fsevents",
+  "tags": ["bug", "issue", "wontfix"]
+},
+{
+  "id": "8",
+  "title": "Empty tags array",
+  "text": "",
+  "tags": []
+},
+{
+  "id": "9",
+  "title": "Missing tags property",
+  "text": "",
+  "tags": []
+},
+{
+  "id": "10",
+  "title": "Another issue",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "11",
+  "title": "One more issue",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "12",
+  "title": "Additional issue",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "13",
+  "title": "New issue",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "14",
+  "title": "Yes another issue",
+  "text": "",
+  "tags": ["issue"]
+},
+{
+  "id": "15",
+  "title": "Still another issue",
+  "text": "",
+  "tags": ["issue"]
+}
+]
